@@ -1,0 +1,34 @@
+/* 여기부터 특정 요소를 중앙 정렬하는 CSS 해킹 */
+.status-bar {
+  position: fixed;
+  top: 0%;
+  width: var(--width-easy);
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 여기까지 CSS 해킹-되긴 하는데 정식은 아닌 유저들 끼리 공유되는 내용 */
+
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}

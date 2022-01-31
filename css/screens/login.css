@@ -1,0 +1,70 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 70%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+  /* not은 "이 것을 제외한 나머지에 적용하고 싶어요" 라는 말이라서,
+  #login-form input 에도 똑같이 쓰면 중복적용됩니다. not쪽에만 쓰셔야해용 */
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+/* input type="submit"이 아닐 때만 border bottom과 border color를 준다 */
+
+/* #login-form input:not([type="submit"]) 에 
+  transition이 들어갔기 때문에,
+  #login-form input:focus 보다 위에 있어야
+  focus 에 들어간 border-color의 변화값이 나타납니다.
+  항상 cascading에 주의하세요! */
+
+#login-form input::placeholder {
+  /* input::placholder는 pseudo element(가상 클래스 선택자)이다 */
+  /* transtiton은 수도 요소가 없는 곳에 만들어야 한다 */
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  text-align: center;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}

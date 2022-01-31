@@ -1,0 +1,47 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting:last-child {
+  border: none;
+}
+
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 22px;
+  color: #2f2f2f;
+  opacity: 0.9;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.6;
+}
+
+.settings__setting-border {
+  width: 100%;
+  background-color: rgba(00, 0, 0, 0.2);
+  margin: 10px 0px;
+  height: 1px;
+}
+.settings__setting-column-new {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.main-screen-scroll {
+  overflow-y: scroll;
+}
+
+.main-screen-scroll::-webkit-scrollbar {
+  display: none;
+}

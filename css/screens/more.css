@@ -1,0 +1,61 @@
+.fa-comment-alt {
+  font-size: 30px;
+  color: black;
+}
+
+.more-screen .icon-row__icon {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  min-width: 70px;
+}
+
+.more-screen .icon-row__icon span {
+  color: var(--font-gray);
+  font-weight: 600;
+}
+.more-screen .icon-row__icon i {
+  font-size: 40px;
+}
+
+.more-suggestions {
+  border-top: var(--main-border);
+  padding-top: 30px;
+}
+
+.more-kokoanow {
+  width: 100%;
+}
+.more-kokoanow__title {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.more-kokoanow__content {
+  width: 100%;
+  height: 270px;
+  background-color: #fee818;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.more-kokoanow__icon {
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.more-kokoanow__icon img {
+  width: 150px;
+}
+
+.more-kokoanow__text {
+  font-family: sans-serif;
+  margin-left: 30px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.more-kokoanow__text span {
+  color: #399bee;
+}

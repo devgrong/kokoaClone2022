@@ -1,0 +1,39 @@
+.alt-header {
+  width: var(--width-easy);
+  padding: 40px var(--horizontal-space) 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 이렇게 코딩하는것의 차이점이 무엇인가요? 제 눈에는 비교해봤을때 같아보이는데
+space-between으로 하지않고 각각 margin-right: auto 와 margin-left:auto 로 간격을 준 이유가 궁금해요!
+space-between이 글자 수에 따라서 배열이 중앙 정열이 안된다는 점 
+지난 강의에서 들었던거 기억 하시죠? 
+auto를 쓰시면 글자 수와 무관하게 중앙 정열이 됩니다. */
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}

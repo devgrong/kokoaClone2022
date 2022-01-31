@@ -1,0 +1,67 @@
+#friends-display-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: -15px;
+}
+
+.fa-info-circle {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.2);
+  margin-right: 5px;
+}
+.fa-chevron-right {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.fa-chevron-right--margin-big {
+  margin-left: 10px;
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.friends-screen__channel-header i {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  /* /애니메이션의 마지막 끝난 상태를 기억하고 싶다면! forwards!! */
+  animation-delay: 1.5s;
+}
